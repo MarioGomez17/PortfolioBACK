@@ -8,9 +8,12 @@ class DeveloperModel(models.Model):
     Email_Developer = models.EmailField(db_column='Email_Developer', default='', null=False)
     Password_Developer = models.CharField(max_length=255, db_column='Password_Developer', default='', null=False)
     Phone_Developer = models.CharField(max_length=15, db_column='Phone_Developer', default='', null=False)
-    Linkedin_Developer = models.URLField(db_column='Linkedin_Developer', default='', null=False)
-    GitGub_Developer = models.URLField(db_column='GitGub_Developer', default='', null=False)
+    LinkedinName_Developer = models.URLField(db_column='LinkedinName_Developer', default='', null=False)
+    LinkedinUrl_Developer = models.URLField(db_column='LinkedinUrl_Developer', default='', null=False)
+    GitGubName_Developer = models.URLField(db_column='GitGubName_Developer', default='', null=False)
+    GitGubUrl_Developer = models.URLField(db_column='GitGubUrl_Developer', default='', null=False)
     City_Developer = models.ForeignKey(CityModel, on_delete=models.PROTECT, db_column='City_Developer')
+    Description_Developer = models.Textfield(db_column='Description_Developer', default='', null=False)
     Technologies_Developer = models.ManyToManyField('TechnologyModel')
 
     def __str__(self):
