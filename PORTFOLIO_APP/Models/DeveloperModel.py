@@ -13,7 +13,7 @@ class DeveloperModel(models.Model):
     GitGubName_Developer = models.URLField(db_column='GitGubName_Developer', default='', null=False)
     GitGubUrl_Developer = models.URLField(db_column='GitGubUrl_Developer', default='', null=False)
     City_Developer = models.ForeignKey(CityModel, on_delete=models.PROTECT, db_column='City_Developer')
-    Description_Developer = models.Textfield(db_column='Description_Developer', default='', null=False)
+    Description_Developer = models.TextField(db_column='Description_Developer', default='', null=False)
     Technologies_Developer = models.ManyToManyField('TechnologyModel')
 
     def __str__(self):
