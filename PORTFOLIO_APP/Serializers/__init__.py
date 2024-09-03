@@ -3,6 +3,5 @@ from .CountrySerializer import CountrySerializer
 from .DepartmentSerializer import DepartmentSerializer
 from .DeveloperSerializer import DeveloperSerializer
 from .DivisionSerializer import DivisionSerializer
-from .ProgrammingLanguageSerializer import ProgrammingLanguageModel
 from .ProjectSerializer import ProjectSerializer
 from .TechnologySerializer import TechnologySerializer

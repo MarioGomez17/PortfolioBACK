@@ -24,7 +24,6 @@ urlpatterns = [
     path('Portfolio/', include('PORTFOLIO_APP.Urls.DepartmentUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.DeveloperUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.DivisionUrls')),
-    path('Portfolio/', include('PORTFOLIO_APP.Urls.ProgrammingLanguageUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.ProjectUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.TechnologyUrls'))
 ]
