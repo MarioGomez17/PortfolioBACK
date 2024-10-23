@@ -19,11 +19,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path('Admin/', admin.site.urls),
+    path('Portfolio/', include('PORTFOLIO_APP.Urls.AcademyUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.CityUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.CountryUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.DepartmentUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.DeveloperUrls')),
-    path('Portfolio/', include('PORTFOLIO_APP.Urls.DivisionUrls')),
+    path('Portfolio/', include('PORTFOLIO_APP.Urls.EducationUrls')),
+    path('Portfolio/', include('PORTFOLIO_APP.Urls.EducationTypeUrls')),
+    path('Portfolio/', include('PORTFOLIO_APP.Urls.LanguageUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.ProjectUrls')),
+    path('Portfolio/', include('PORTFOLIO_APP.Urls.SkillUrls')),
     path('Portfolio/', include('PORTFOLIO_APP.Urls.TechnologyUrls'))
 ]
