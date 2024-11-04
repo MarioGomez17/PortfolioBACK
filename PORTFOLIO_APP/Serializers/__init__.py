@@ -3,9 +3,10 @@ from .CitySerializer import CitySerializer
 from .CountrySerializer import CountrySerializer
 from .DepartmentSerializer import DepartmentSerializer
 from .DeveloperSerializer import DeveloperSerializer
+from .DivisionSerializer import DivisionSerializer
 from .EducationSerializer import EducationSerializer
 from .EducationTypeSerializer import EducationTypeSerializer
 from .LanguageSerializer import LanguageSerializer
+from .ProgrammingLanguageSerializer import ProgrammingLanguageSerializer
 from .ProjectSerializer import ProjectSerializer
-from .SkillSerializer import SkillSerializer
 from .TechnologySerializer import TechnologySerializer
