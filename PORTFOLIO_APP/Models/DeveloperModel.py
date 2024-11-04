@@ -14,7 +14,6 @@ class DeveloperModel(models.Model):
     City_Developer = models.ForeignKey(CityModel, on_delete=models.PROTECT, db_column='City_Developer')
     Description_Developer = models.TextField(db_column='Description_Developer', default='', null=False)
     Technologies_Developer = models.ManyToManyField('TechnologyModel')
-    Skills_Developer = models.ManyToManyField('SkillModel')
     Languages_Developer = models.ManyToManyField('LanguageModel')
 
     def __str__(self):

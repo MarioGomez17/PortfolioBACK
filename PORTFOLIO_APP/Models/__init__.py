@@ -3,9 +3,10 @@ from .CityModel import CityModel
 from .CountryModel import CountryModel
 from .DepartmentModel import DepartmentModel
 from .DeveloperModel import DeveloperModel
+from .DivisionModel import DivisionModel
 from .EducationModel import EducationModel
 from .EducationTypeModel import EducationTypeModel
 from .LanguageModel import LanguageModel
+from .ProgrammingLanguageModel import ProgrammingLanguageModel
 from .ProjectModel import ProjectModel
-from .SkillModel import SkillModel
 from .TechnologyModel import TechnologyModel
