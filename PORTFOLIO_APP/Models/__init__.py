@@ -9,4 +9,5 @@ from .EducationTypeModel import EducationTypeModel
 from .LanguageModel import LanguageModel
 from .ProgrammingLanguageModel import ProgrammingLanguageModel
 from .ProjectModel import ProjectModel
+from .SkillModel import SkillModel
 from .TechnologyModel import TechnologyModel
