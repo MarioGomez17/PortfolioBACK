@@ -1,5 +1,5 @@
 from django.db import models
-
+from .DeveloperModel import DeveloperModel
 
 class ProjectModel(models.Model):
     Id_Project = models.AutoField(primary_key=True, db_column='Id_Project', null=False)
@@ -7,6 +7,7 @@ class ProjectModel(models.Model):
     Description_Project = models.TextField(db_column='Description_Project', default='', null=False)
     URL_Project = models.URLField(db_column='URL_Project', default='', null=False)
     Technologies_Project = models.ManyToManyField('TechnologyModel')
+    Developer_Project = models.ForeignKey(DeveloperModel, on_delete=models.PROTECT, db_column='Developer_Project', related_name='Projects_Developer')
 
     def __str__(self):
         return self.Name_Project
