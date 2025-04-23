@@ -8,4 +8,4 @@ class TechnologySerializer(serializers.ModelSerializer):
     ProgrammingLanguage_Technology = ProgrammingLanguageSerializer(read_only=True)
     class Meta:
         model = TechnologyModel
-        fields = ['Id_Technology', 'Name_Technology', 'Logo_Technology', 'ProgrammingLanguage_Technology', 'Division_Technology']
+        fields = ['Id_Technology', 'Name_Technology', 'Description_Technology', 'Logo_Technology', 'ProgrammingLanguage_Technology', 'Division_Technology']

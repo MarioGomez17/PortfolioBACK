@@ -4,4 +4,4 @@ from ..Models import ProgrammingLanguageModel
 class ProgrammingLanguageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProgrammingLanguageModel
-        fields = ['Id_ProgrammingLanguage', 'Name_ProgrammingLanguage', 'Logo_ProgrammingLanguage']
+        fields = ['Id_ProgrammingLanguage', 'Name_ProgrammingLanguage', 'Description_ProgrammingLanguage', 'Logo_ProgrammingLanguage']
