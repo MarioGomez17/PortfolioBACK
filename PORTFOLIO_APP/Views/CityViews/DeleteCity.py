@@ -1,4 +1,4 @@
-from rest_framework import viewsets, generics
+from rest_framework import generics
 from ...Models.CityModel import CityModel
 from ...Serializers.CitySerializer import CitySerializer
 
