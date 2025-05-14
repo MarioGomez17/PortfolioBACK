@@ -2,14 +2,14 @@ from rest_framework import serializers
 from ..Models import ExperienceModel
 from .RoleSerializer import RoleSerializer
 from .CompanySerializer import CompanySerializer
-from .ResponsibilitySerializer import ResponsibilitySerializer
+from .ResponsabilitySerializer import ResponsabilitySerializer
 from .AchievementSerializer import AchievementSerializer
 
 
 class ExperienceSerializer(serializers.ModelSerializer):
     Role_Experience = RoleSerializer(read_only=True)
     Company_Experience = CompanySerializer(read_only=True)
-    Experience_Responsibilities = ResponsibilitySerializer(many=True, read_only=True)
+    Experience_Responsibilities = ResponsabilitySerializer(many=True, read_only=True)
     Experience_Achievements = AchievementSerializer(many=True, read_only=True)
 
     class Meta:

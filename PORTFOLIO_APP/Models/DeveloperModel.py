@@ -11,12 +11,16 @@ class DeveloperModel(models.Model):
     LinkedinUrl_Developer = models.URLField(db_column='LinkedinUrl_Developer', default='', null=False)
     GitHubName_Developer = models.URLField(db_column='GitHubName_Developer', default='', null=False)
     GitHubUrl_Developer = models.URLField(db_column='GitHubUrl_Developer', default='', null=False)
+    Role_Developer = models.URLField(db_column='Role_Developer', default='', null=False)
+    ShortProfile_Developer = models.TextField(db_column='ShortProfile_Developer', default='', null=False)
+    LongProfile_Developer = models.TextField(db_column='LongProfile_Developer', default='', null=False)
     City_Developer = models.ForeignKey(CityModel, on_delete=models.PROTECT, db_column='City_Developer')
-    Description_Developer = models.TextField(db_column='Description_Developer', default='', null=False)
     ProgrammingLanguages_Developer = models.ManyToManyField('ProgrammingLanguageModel')
     Technologies_Developer = models.ManyToManyField('TechnologyModel')
-    Languages_Developer = models.ManyToManyField('LanguageModel')
+    IdesAndTools_Developer = models.ManyToManyField('IdeAndToolModel')
+    ControlsVersionDeveloper = models.ManyToManyField('ControlVersionModel')
     Skills_Developer = models.ManyToManyField('SkillModel')
+    Languages_Developer = models.ManyToManyField('LanguageModel')
 
     def __str__(self):
         return self.Name_Developer

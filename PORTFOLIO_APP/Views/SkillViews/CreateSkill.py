@@ -1,4 +1,4 @@
-from rest_framework import viewsets, generics
+from rest_framework import generics
 from ...Models.SkillModel import SkillModel
 from ...Serializers.SkillSerializer import SkillSerializer
 
